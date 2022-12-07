@@ -1,0 +1,172 @@
+#opening {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#slice-up-icon {
+  color: black;
+  font-size: 50vh;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--main-green);
+  height: 30vh;
+  width: 60vh;
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  overflow: hidden;
+  animation: SliceUpIcon 4s;
+}
+
+#slice-up-icon > span {
+  display: block;
+}
+
+#slice-down-icon {
+  color: var(--main-green);
+  font-size: 50vh;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  height: 30vh;
+  width: 60vh;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  overflow: hidden;
+  animation: SliceDownIcon 4s;
+}
+
+#slice-down-icon > span {
+  display: block;
+  transform: translateY(-30vh);
+}
+
+#none-slice-icon {
+  position: absolute;
+}
+
+#up-triangle {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 0 15%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: UpTriangle 8s;
+}
+
+#down-triangle {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 100%, 100% 85%, 100% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: DownTriangle 8s;
+}
+
+#none-slice-icon {
+  color: var(--main-green);
+  font-size: 50vh;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  height: 60vh;
+  width: 60vh;
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  animation: NoneSliceIcon 3s;
+  animation-delay: 1.5s;
+}
+
+@keyframes SliceUpIcon {
+  0% {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+  70% {
+    color: black;
+    background-color: var(--main-green);
+  }
+  100% {
+    color: var(--main-green);
+    background-color: black;
+  }
+}
+
+@keyframes SliceDownIcon {
+  0% {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes UpTriangle {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+  12.5% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes DownTriangle {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  12.5% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes NoneSliceIcon {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: scale(13, 13);
+    opacity: 0;
+  }
+}
+
+

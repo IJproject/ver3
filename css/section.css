@@ -1,0 +1,137 @@
+section {
+  overflow: hidden;
+  font-family:'Kosugi', 'Kosugi Maru', sans-serif;;
+}
+
+.container {
+  margin: auto 10vh 8vw;
+  width: 84vw;
+}
+
+.top-menu {
+  display: flex;
+  list-style: none;
+  height: 10vh;
+  width: 100vw;
+}
+
+.top-menu li {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  flex: 1;
+}
+
+.top-menu li a {
+  color: white;
+  font-size: 3vh;
+  font-family: 'Pacifico', cursive;
+  display: inline-block;
+  width: 100%;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 10vh;
+  margin: 6vh auto;
+}
+
+h2 span {
+  color: var(--dark-green);
+}
+
+.container > div:first-child {
+  padding-top: 6vh;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sentence-image {
+  height: 30vh;
+  width: calc(30vh * 16 / 9);
+  margin: auto 2vw;
+}
+
+.main-sentence{
+  line-height: 2rem;
+  margin: auto 2vw;
+}
+
+.hobby-item {
+  margin-bottom: 5vh;
+}
+
+.hobby-title {
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--dark-green);
+}
+
+.item-none {
+  height: 30vh;
+  width: 100%;
+  text-align: center;
+  font-size: 4vh;
+  font-family: 'Pacifico', cursive;
+}
+
+.portfolio-item {
+  margin-bottom: 12vh;
+}
+
+.portfolio-explain {
+  margin: auto 2vw;
+  text-align: center;
+}
+
+.portfolio-explain > a {
+  display: inline-block;
+  margin: 1vh auto;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  margin: 2vh auto;
+}
+
+.portfolio-title > span:first-child {
+  font-size: 4rem;
+  color: var(--dark-green);
+}
+
+.portfolio-title > .now {
+  font-size: 1.5rem;
+}
+
+.portfolio-used-language {
+  font-size: 1.2rem;
+  margin: 2vh auto 1vh;
+}
+
+.portfolio-created-date {
+  font-size: 1.1rem;
+  margin: 1vh auto 2vh;
+}
+
+.portfolio-sentence {
+  text-align: left;
+}
+
+#past-portfolio img {
+  height: 30vh;
+  width: calc(30vh * 16 / 9);
+  margin: auto 2vw;
+}

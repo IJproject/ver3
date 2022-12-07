@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  --main-green: rgb(0, 192, 0);
+  --dark-green: rgb(0, 96, 0);
+  --pale-green: rgba(0, 192, 0, .3);
+  --top-black-green: linear-gradient(135deg, rgb(32, 32, 32), rgb(0, 96, 0));
+}
+
+.hide {
+  display: none;
+  pointer-events: none;
+}
+
+.top-black-green {
+  background: var(--top-black-green);
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+

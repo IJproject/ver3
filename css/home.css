@@ -1,0 +1,158 @@
+#home {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Pacifico', cursive;
+  background-image: url(../images/office.png);
+  object-fit: cover;
+  overflow: hidden;
+} 
+
+#home-title {
+  height: 40vh;
+  width: 100%;
+  padding-top: 10vh;
+  font-size: 16vh;
+  text-align: center;
+}
+
+.home-title-initial {
+  color: var(--dark-green);
+  font-size: 20vh;
+}
+
+#section-select {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+
+.section-select-item {
+  width: 18vw;
+  height: 18vw;
+  margin: auto 3.5vw;
+  font-size: 4vw;
+  text-align: center;
+  position: relative;
+  outline: auto;
+  border-radius: 10%;
+  border-bottom: 0.4vw solid green;
+}
+
+.section-select-item:hover {
+  border-bottom: 0px solid green;
+  transition: border-bottom .3s;
+}
+
+.select-item-initial{
+  color: var(--dark-green);
+}
+
+#pop-up1 {
+  animation: ProfilePopUp 15s infinite;
+}
+
+#pop-up2 {
+  animation: SkillsPopUp 15s infinite;
+}
+
+#pop-up3 {
+  animation: WorksPopUp 15s infinite;
+}
+
+#pop-up4 {
+  animation: ContactPopUp 15s infinite;
+}
+
+.section-select-item img {
+  background-color: white;
+  width: 18vw;
+  height: 18vw;
+  object-fit: cover;
+  opacity: .85;
+  border-radius: 10%;
+}
+
+.section-select-item a {
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+}
+
+@keyframes ProfilePopUp {
+  0% {
+    transform: scale(1) translateY(-15%);
+  }
+  5% {
+    transform: scale(1.2) translateY(-15%);
+  }
+  20% {
+    transform: scale(1.2) translateY(-15%);
+  }
+  25% {
+    transform: scale(1) translateY(-15%);
+  }
+  100% {
+    transform: scale(1) translateY(-15%);
+  }
+}
+
+@keyframes SkillsPopUp {
+  0% {
+    transform: scale(1) translateY(15%);
+  }
+  25% {
+    transform: scale(1) translateY(15%);
+  }
+  30% {
+    transform: scale(1.2) translateY(15%);
+  }
+  45% {
+    transform: scale(1.2) translateY(15%);
+  }
+  50% {
+    transform: scale(1) translateY(15%);
+  }
+  100% {
+    transform: scale(1) translateY(15%);
+  }
+}
+
+@keyframes WorksPopUp {
+  0% {
+    transform: scale(1) translateY(-15%);
+  }
+  50% {
+    transform: scale(1) translateY(-15%);
+  }
+  55% {
+    transform: scale(1.2) translateY(-15%);
+  }
+  70% {
+    transform: scale(1.2) translateY(-15%);
+  }
+  75% {
+    transform: scale(1) translateY(-15%);
+  }
+  100% {
+    transform: scale(1) translateY(-15%);
+  }
+}
+
+@keyframes ContactPopUp {
+  0% {
+    transform: scale(1) translateY(15%);
+  }
+  75% {
+    transform: scale(1) translateY(15%);
+  }
+  80% {
+    transform: scale(1.2) translateY(15%);
+
+  }
+  95% {
+    transform: scale(1.2) translateY(15%);
+  }
+  100% {
+    transform: scale(1) translateY(15%);
+  }
+}
