@@ -16,5 +16,5 @@
   setTimeout( () => {
     Opening.classList.add('hide');
     Home.classList.remove('hide');
-  }, 8000)
+  }, 7700)
 }
