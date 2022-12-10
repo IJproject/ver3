@@ -61,10 +61,12 @@ h2 span {
   height: 30vh;
   width: calc(30vh * 16 / 9);
   margin: auto 2vw;
+  clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%);
+  /* clip-path: polygon(0 0, 60% 0, 100% 30%, 100% 100%, 40% 100%, 0 70%); */
 }
 
 .main-sentence{
-  line-height: 2rem;
+  line-height: 1.6rem;
   margin: auto 2vw;
 }
 
@@ -76,6 +78,7 @@ h2 span {
   text-align: center;
   font-size: 1.2rem;
   border-bottom: 1px solid var(--dark-green);
+  margin-bottom: 2vh;
 }
 
 .item-none {
@@ -90,21 +93,12 @@ h2 span {
   margin-bottom: 12vh;
 }
 
-.portfolio-explain {
-  margin: auto 2vw;
-  text-align: center;
-}
-
-.portfolio-explain > a {
-  display: inline-block;
-  margin: 1vh auto;
-}
-
 .portfolio-title {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Pacifico', cursive;
   margin: 2vh auto;
+  text-align: center;
 }
 
 .portfolio-title > span:first-child {
@@ -116,14 +110,22 @@ h2 span {
   font-size: 1.5rem;
 }
 
+.watch-me {
+  margin: 1vh auto;
+  text-align: center;
+}
+
+
 .portfolio-used-language {
   font-size: 1.2rem;
   margin: 2vh auto 1vh;
+  text-align: center;
 }
 
 .portfolio-created-date {
   font-size: 1.1rem;
   margin: 1vh auto 2vh;
+  text-align: center;
 }
 
 .portfolio-sentence {
