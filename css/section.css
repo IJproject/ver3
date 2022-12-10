@@ -81,6 +81,11 @@ h2 span {
   margin-bottom: 2vh;
 }
 
+/* canvas {
+  height: 300px;
+  width: 500px;
+} */
+
 .item-none {
   height: 30vh;
   width: 100%;
