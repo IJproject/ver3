@@ -8,6 +8,14 @@
   --top-black-green: linear-gradient(135deg, rgb(32, 32, 32), rgb(0, 96, 0));
 }
 
+*:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
 .hide {
   display: none;
   pointer-events: none;
